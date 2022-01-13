@@ -1,1 +1,70 @@
+/********** Base styles **********/
+* {
+	box-sizing: border-box;
+}
 
+h1 {
+	text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+.section {
+  float: left;
+  position: relative;
+}
+
+.section_title {
+  font-size: 1.25em;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+
+.section_title_color1 {
+	background: #F67280;
+}
+
+.section_title_color2 {
+	background: #C06C84;
+}
+
+.section_title_color3 {
+	background: #6C5B7B;
+}
+
+.section_paragraph {
+  padding: 50px 10px 10px 10px;
+  background: #F9B195;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+	.col-l {
+	  width: 33.33%;
+	}
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-12 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+}
+
+/********** Mobile **********/
+@media (max-width: 767px) {
+  .col-sm {
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+/** HEADER **/
+.container {
+	width: 100%;
+	border-radius: 0px;
+	padding: 0;
+}
+
+.navbar-header {
+	width: 100%;
+	background-color: #9DC6CA; 
+}
+
+.container>.navbar-header {
+	margin-left: 0;
+}
+
+.navbar-brand h1 { /* Company name */
+  font-family: 'Lora', serif;
+  font-size: 1.3em;
+  color: black; 
+  text-transform: uppercase;
+  margin-top: 0;
+  height: 30px;
+  width: 100px;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list a {
+  color: black;
+  text-align: center;
+  background-color: #E2CCC6;
+  border-bottom: white 1px solid;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #355C7D;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -40px;
+}
+/* END HEADER */
+
+/* CONTENT */
+.page-header {
+  font-family: 'Lora', serif;
+  text-transform: uppercase; 
+}
+
+.menu-tile-content > h3 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.menu-tile-content {
+	height: 600px;	
+	padding: 20px;
+	margin: 15px;
+	background-color: #E2CCC6;
+	margin-bottom: 15px; 
+}
+/* END CONTENT */
+
+#collapsable-nav {
+    margin: 0;
+    padding: 0;
+    background-color: #9DC6CA; 
+    overflow: hidden;
+}
+
+/********** XS devices only **********/
+@media (max-width: 280px) {
+	.navbar-brand {
+		height: 90px;
+	}
+	.navbar-toggle {
+		float: left;
+		margin-left: 25px;
+	}
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+  }
+}
